@@ -1,4 +1,7 @@
-@use "./variable" as var;
+
+
+
+
 
 * {
     margin: 0;
@@ -18,13 +21,18 @@ html {
     font-size: 16px;
 }
 
+
+
 body {
     font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+
 }
 
 .container {
-    max-width: var.$max_width;
+    width: 1175px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0px auto;
+    
 }
