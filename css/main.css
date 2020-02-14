@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  max-width: 100%;
+  width: 100%;
 }
 
 .container {
@@ -203,7 +203,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  max-width: 100%;
+  width: 100%;
 }
 
 .container {
@@ -364,7 +364,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  max-width: 100%;
+  width: 100%;
 }
 
 .container {
@@ -410,7 +410,7 @@ html body {
 html body footer {
   background: url("../Images/footer-image.png");
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-size: 100%;
   color: white;
   height: auto;
   padding-left: 15px;
