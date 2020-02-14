@@ -6,11 +6,12 @@ $color2:rgb(127, 152, 184);
 $color3:rgb(179, 183, 185);
 
 
-
-.container {
-    margin: 15px;
-    padding: 15px;
-    background-color: $color1;
+.sec1 {
+  background-color: $color1;
+.sec1--container {
+    // margin: 15px;
+    // padding: 15px;
+    // background-color: $color1;
     line-height: 3rem;
     .part1 h1{
         text-align: center;
@@ -22,6 +23,8 @@ $color3:rgb(179, 183, 185);
       
     }
   }
+
+}
 
   .part2 {
     display: flex;
@@ -82,12 +85,16 @@ $color3:rgb(179, 183, 185);
       }
   
   }
+
+
+  // tablet mode 
   
-  @media (max-width: 375px){
-    .container{
-      max-width: 360px;
-      padding: 0px; 
-    }
+  
+  @media (max-width: 767px){
+    // .sec1--container{
+    //   // max-width: 360px;
+    //   padding: 0px; 
+    // }
     .part1 h1{
             font-size: 20px;
         }
@@ -109,7 +116,7 @@ $color3:rgb(179, 183, 185);
     }
   }
 
-  @media(max-width:375px){
+  @media(max-width:767px){
     .container{
         max-width: 342px;
         padding: 0px; 

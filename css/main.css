@@ -213,17 +213,17 @@ body {
   margin: 0px auto;
 }
 
-.container {
-  margin: 15px;
-  padding: 15px;
+.sec1 {
   background-color: #f2f1ef;
+}
+.sec1 .sec1--container {
   line-height: 3rem;
 }
-.container .part1 h1 {
+.sec1 .sec1--container .part1 h1 {
   text-align: center;
   color: black;
 }
-.container .part1 h4 {
+.sec1 .sec1--container .part1 h4 {
   text-align: center;
   color: #7f98b8;
 }
@@ -284,12 +284,7 @@ body {
   margin-left: 2rem;
 }
 
-@media (max-width: 375px) {
-  .container {
-    max-width: 360px;
-    padding: 0px;
-  }
-
+@media (max-width: 767px) {
   .part1 h1 {
     font-size: 20px;
   }
@@ -312,7 +307,7 @@ body {
     margin-top: 2rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
   .container {
     max-width: 342px;
     padding: 0px;
