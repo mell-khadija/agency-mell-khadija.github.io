@@ -1,7 +1,5 @@
 
-
-
-
+@use 'variable' as var;
 
 * {
     margin: 0;
@@ -30,10 +28,10 @@ body {
 }
 
 .container {
-    width: 1175px;
-    max-width: 90%;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: var.$max_width;
+    width: 90%;
+    // padding-left: 15px;
+    // padding-right: 15px;
     margin: 0px auto;
     
 }

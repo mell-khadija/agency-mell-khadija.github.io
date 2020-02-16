@@ -27,7 +27,6 @@ html {
         footer{
             background: url("../Images/footer-image.png");
             background-repeat: no-repeat;
-            // background-size: 100%;
             background-size: cover;
             color: white;
             height: auto;
@@ -71,15 +70,15 @@ html {
 }
 @media(max-width:719px){
 body{
-    font-size: 12px;
+    // font-size: 12px;
     footer{
         
         .foot{
-
+            
             .button{
                 display: flex;
                 flex-direction:column;
-                margin-bottom:0%;
+                margin-bottom:0px;
             }   
         }
         .div-footer{

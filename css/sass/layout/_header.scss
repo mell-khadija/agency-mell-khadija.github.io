@@ -18,6 +18,8 @@
 }
 nav {
     display: flex;
+    text-transform: capitalize;
+    font-weight: bold;
     align-items: center;
     justify-content: center;
     height: 70px;
@@ -73,6 +75,7 @@ nav {
         margin-left: auto;
         @media (max-width: 992px) {
             margin-right: 56px;
+            
         }
         @media (max-width: 767px) {
             display: none;
@@ -97,6 +100,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 64px;
+    background: #fff;
     @media (max-width: 992px) {
         flex-direction: column;
     }
@@ -104,12 +108,15 @@ header {
        width: 45%; 
        @media (max-width: 992px) {
            width: 90%;
-           text-align: center;
+        //    text-align: center;
        }
        h1 {
-        font-size: 48px;
+        font-size: 56px;
         font-weight: normal;
         padding-bottom: 20px;
+        @media (max-width: 992px) {
+            font-size: 32px;
+        }
         &::first-letter {
             text-transform: capitalize;
         }
@@ -139,8 +146,10 @@ header {
 
     .overlay {
         width: 100%;
+
         // height: 200%;
-        // // position: relative;
+        position: relative;
+        top: 48px;
         #video {
             object-fit: fill;
             height: 550px;
@@ -152,7 +161,6 @@ header {
 .show-menu {
     transform: translateX(0px);
 }
-
 
 
 

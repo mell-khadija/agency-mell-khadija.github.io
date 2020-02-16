@@ -21,10 +21,8 @@ body {
 }
 
 .container {
-  width: 1175px;
-  max-width: 90%;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1400px;
+  width: 90%;
   margin: 0px auto;
 }
 
@@ -47,6 +45,8 @@ body {
 
 nav {
   display: flex;
+  text-transform: capitalize;
+  font-weight: bold;
   align-items: center;
   justify-content: center;
   height: 70px;
@@ -135,6 +135,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-top: 64px;
+  background: #fff;
 }
 @media (max-width: 992px) {
   header {
@@ -147,13 +148,17 @@ header div:first-child {
 @media (max-width: 992px) {
   header div:first-child {
     width: 90%;
-    text-align: center;
   }
 }
 header div:first-child h1 {
-  font-size: 48px;
+  font-size: 56px;
   font-weight: normal;
   padding-bottom: 20px;
+}
+@media (max-width: 992px) {
+  header div:first-child h1 {
+    font-size: 32px;
+  }
 }
 header div:first-child h1::first-letter {
   text-transform: capitalize;
@@ -183,6 +188,8 @@ header button:hover {
 }
 header .overlay {
   width: 100%;
+  position: relative;
+  top: 48px;
 }
 header .overlay #video {
   object-fit: fill;
@@ -216,15 +223,14 @@ body {
 }
 
 .container {
-  width: 1175px;
-  max-width: 90%;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1400px;
+  width: 90%;
   margin: 0px auto;
 }
 
 .sec1 {
   background-color: #f2f1ef;
+  padding: 56px 0px;
 }
 .sec1 .sec1--container {
   line-height: 3rem;
@@ -373,10 +379,8 @@ body {
 }
 
 .container {
-  width: 1175px;
-  max-width: 90%;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1400px;
+  width: 90%;
   margin: 0px auto;
 }
 
@@ -460,13 +464,10 @@ html body footer .div-footer div p a {
 }
 
 @media (max-width: 719px) {
-  body {
-    font-size: 12px;
-  }
   body footer .foot .button {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0%;
+    margin-bottom: 0px;
   }
   body footer .div-footer {
     display: flex;

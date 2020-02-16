@@ -8,10 +8,8 @@ $color3:rgb(179, 183, 185);
 
 .sec1 {
   background-color: $color1;
+  padding: 56px 0px;
 .sec1--container {
-    // margin: 15px;
-    // padding: 15px;
-    // background-color: $color1;
     line-height: 3rem;
     .part1 h1{
         text-align: center;
@@ -91,10 +89,6 @@ $color3:rgb(179, 183, 185);
   
   
   @media (max-width: 767px){
-    // .sec1--container{
-    //   // max-width: 360px;
-    //   padding: 0px; 
-    // }
     .part1 h1{
             font-size: 20px;
         }
