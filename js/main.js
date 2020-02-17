@@ -1,14 +1,16 @@
+// document.querySelector(".menu-btn").addEventListener('click', () =>{
+//     document.querySelector("#links").classList.toggle("show-menu");
+// });
 
-let links = document.getElementById("links");
-let men = document.getElementById("menu");
 
+const menu = document.querySelector(".menu-btn");
+const links = document.querySelector("#links");
 
-function toggleMenu() {
-    if (links.classList.contains("show")){
-        links.classList.remove("show");
-        menubar.addList.remove("hideMenu")
+menu.addEventListener("click", () =>{
+    if(!links.classList.contains("show-menu")) {
+        links.classList.add("show-menu");
     }
     else {
-        links.classList.add("show");
+        links.classList.remove("show-menu");
     }
-}
+})

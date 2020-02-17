@@ -8,8 +8,8 @@ $color3:rgb(179, 183, 185);
 
 .sec1 {
   background-color: $color1;
+  padding: 56px 0px;
 .sec1--container {
-    
     line-height: 3rem;
     .part1 h1{
         text-align: center;
@@ -88,8 +88,7 @@ $color3:rgb(179, 183, 185);
   // tablet mode 
   
   
-  @media (max-width: 375px){
-   
+  @media (max-width: 767px){
     .part1 h1{
             font-size: 20px;
         }
