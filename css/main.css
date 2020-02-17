@@ -327,6 +327,7 @@ body {
   .sec1--container {
     max-width: 342px;
     padding: 0px;
+    margin: auto;
   }
 
   .part4 {
