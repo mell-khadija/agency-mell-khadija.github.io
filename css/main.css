@@ -425,7 +425,6 @@ html body footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  height: 100vh;
   padding-left: 15px;
   padding-right: 12px;
   margin: 0px 0px;
@@ -465,14 +464,17 @@ html body footer .div-footer {
 html body footer .div-footer div p a {
   color: white;
   text-decoration: none;
-  margin: 2rem;
+  margin: 10px;
 }
 
 @media (max-width: 719px) {
+  body footer {
+    font-size: 12px;
+  }
   body footer .foot .button {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0px;
+    margin-bottom: 56px !important;
   }
   body footer .div-footer {
     display: flex;
