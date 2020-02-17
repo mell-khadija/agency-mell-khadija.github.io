@@ -25,15 +25,18 @@ html {
         font-family: 'Poppins', sans-serif;
         
         footer{
+            position: relative;
+            top: -10px;
+            margin-bottom: 0px;
             background: url("../Images/footer-image.png");
             background-repeat: no-repeat;
             // background-size: 100%;
             background-size: cover;
             color: white;
-            height: auto;
+            height:100vh;
             padding-left: 15px;
             padding-right: 12px;
-            margin: 0px auto;
+            margin: 0px 0px;
             .foot{
                 text-align: center;
                 padding-top: 30px;
@@ -61,6 +64,8 @@ html {
                     p{
                         a{
                             color:white;
+                            text-decoration: none;
+                            margin: 2rem;
                         }
                     }
                 }
@@ -88,6 +93,8 @@ body{
             align-items: center;
             justify-content: center;
             flex-wrap: nowrap;
+            
+           
         }
     }
 }

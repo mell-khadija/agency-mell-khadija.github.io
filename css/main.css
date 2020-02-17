@@ -307,7 +307,7 @@ body {
     margin-top: 2rem;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 375px) {
   .container {
     max-width: 342px;
     padding: 0px;
@@ -403,14 +403,17 @@ html body {
   font-family: "Poppins", sans-serif;
 }
 html body footer {
+  position: relative;
+  top: -10px;
+  margin-bottom: 0px;
   background: url("../Images/footer-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  height: auto;
+  height: 100vh;
   padding-left: 15px;
   padding-right: 12px;
-  margin: 0px auto;
+  margin: 0px 0px;
 }
 html body footer .foot {
   text-align: center;
@@ -463,6 +466,7 @@ html body footer .div-footer div p a {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
+    line-height: 2;
   }
 }
 
