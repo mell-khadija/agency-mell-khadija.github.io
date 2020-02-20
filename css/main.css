@@ -61,6 +61,7 @@ nav ul {
   nav ul {
     display: block;
     position: absolute;
+    z-index: 12;
     top: 0;
     left: 0;
     background: #262626;
@@ -483,6 +484,54 @@ html body footer .div-footer div p a {
     justify-content: center;
     flex-wrap: nowrap;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+.container {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.contact {
+  height: 130vh;
+}
+.contact .contact-1 {
+  text-align: center;
+  padding-top: 6rem;
+}
+.contact .contact-1 p {
+  text-align: center;
+}
+
+.contact-12 {
+  display: flex;
+}
+
+.contact--insc {
+  display: block;
+  justify-content: end;
+  margin-top: 8rem;
 }
 
 /*# sourceMappingURL=main.css.map */
