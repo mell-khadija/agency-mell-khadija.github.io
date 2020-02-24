@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" sizes="100*80" href="./Images/logo-youcode.png">
-    <title>web design with sass</title>
+    <title>Contact</title>
 </head>
 
 <body>
@@ -28,22 +28,22 @@
         </div>
     </nav>
 
-    <main class="contact">
-        <div class="contact-1">
-            <h2>Contactez Notre Agence Digitale</h2>
-            <p>Veuillez entrer les détails de votre demande. Un membre de notre équipe répondra dans les meilleurs délais.</p>
-        </div>
-        <div class="contact-12">
-            <img src="Images/446.png" alt="#">
-            <form class="contact--insc">
-                <input type="text" name="Nom" placeholder="Nom" class="Nom">
-                <input type="email" name="Email" placeholder="Email" class="Email">
-                <input type="telephone" name="numéro de téléphone" placeholder="Numéro de téléphone" class="numéro de téléphone">
-                <input type="text" name="objet" placeholder="objet" class="objet">
-                <input type="text" name="demande" placeholder="Détaillez votre demande" class="demande">
-                <input type="submit" value="Envoyer">
-            </form>
-
+    <main class="sec-contact">
+        <div class="contact-container">
+            <div class="contact-title">
+                <h1>Contactez Notre Agence Digitale</h1>
+            </div>
+            <div class="contact-contenu">
+                <img src="Images/446.png" alt="#" width="600px" height="400px">
+                <form class="contact--insc">
+                    <input type="text" name="Nom" placeholder="Nom" id="Nom" required>
+                    <input type="email" name="Email" placeholder="Email" id="Email" required> 
+                    <input type="telephone" name="numéro de téléphone" placeholder="Numéro de téléphone" id="numéro-de-téléphone" required>
+                    <input type="text" name="objet" placeholder="objet" id="objet" required>
+                    <textarea type="text" name="demande" placeholder="Détaillez votre demande" id="demande" required></textarea>
+                    <button class="button-contact" style="width: 30%;">Envoyer</button>
+                </form>
+            </div>
         </div>
     </main>
 

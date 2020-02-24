@@ -513,25 +513,67 @@ body {
   margin: 0px auto;
 }
 
-.contact {
+.sec-contact {
+  margin-top: 4rem;
   height: 130vh;
 }
-.contact .contact-1 {
+
+.contact-title {
   text-align: center;
-  padding-top: 6rem;
-}
-.contact .contact-1 p {
-  text-align: center;
+  padding-top: 3rem;
 }
 
-.contact-12 {
+.contact-contenu {
   display: flex;
+  justify-content: space-evenly;
+  padding-top: 5rem;
 }
 
 .contact--insc {
-  display: block;
-  justify-content: end;
-  margin-top: 8rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+input {
+  margin-top: 1rem;
+  padding: 1rem 16rem 1rem 1rem;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  background: #eee;
+}
+
+#Nom placeholder {
+  text-align: start;
+}
+
+textarea {
+  margin-top: 1rem;
+  padding: 1rem 8rem 6rem 1rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: #eee;
+}
+
+.button-contact {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 0px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-contact:hover {
+  background-color: #1e71be;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
