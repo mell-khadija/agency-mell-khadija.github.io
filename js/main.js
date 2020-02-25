@@ -11,6 +11,13 @@ menu.addEventListener("click", () =>{
 })
 
 
+let errors = {
+    nom: '',
+    telnum: '',
+    email: ''
+};
+
+
 let nom = document.getElementsByName("nom")[0];
 let nomSpan = document.querySelector(".Nom + span");
 let telnum = document.getElementsByName("telnum")[0];
@@ -18,30 +25,38 @@ let telnumSpan = document.querySelector(".telnum + span");
 let email = document.getElementsByName("email")[0];
 let emailSpan = document.querySelector(".email + span");
 
+
+// let formSubmit = document.getElementById('submit');
+let form = document.getElementsByTagName('form')[0];
+
 let emailIsTouched = false;
 let emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
 
 nom.addEventListener('input', function(e) {
     if (e.currentTarget.value.length > 22) {
         e.currentTarget.classList.add("inputerror");
-        nomSpan.textContent = "the name must be less than 22 character";
+        errors.nom = "the name must be less than 22 character";
+        nomSpan.textContent = errors.nom;
     }
 
     else {
         e.currentTarget.classList.remove("inputerror");
         e.currentTarget.classList.add("inputValid");
-        nomSpan.textContent = "";      
+        errors.nom = "";
+        nomSpan.textContent = errors.nom;    
     }
 })
 
 nom.addEventListener('blur', function(e) {
     if (e.currentTarget.value.length < 3) {
         e.currentTarget.classList.add("inputerror");
-        nomSpan.textContent = "the name must be greater than 3 character"; 
+        errors.nom = "the name must be greater than 3 character";
+        nomSpan.textContent = errors.nom;
     }
     else if (e.currentTarget.value.length > 3 && e.currentTarget.value.length < 22){
         e.currentTarget.classList.add("inputValid");
-        nomSpan.textContent = "";
+        errors.nom = "";
+        nomSpan.textContent = errors.nom;
     }
 })
 
@@ -50,7 +65,8 @@ nom.addEventListener('blur', function(e) {
 email.addEventListener('blur', function(e) {
     if (!(emailRegex.test(e.currentTarget.value))) {
         e.currentTarget.classList.add("inputerror");
-        emailSpan.textContent = "the email is not valid";
+        errors.email = "the email is not valid";
+        emailSpan.textContent = errors.email;
     }
 })
 
@@ -58,31 +74,29 @@ email.addEventListener('input', function(e){
     if (emailRegex.test(e.currentTarget.value)) {
         e.currentTarget.classList.remove("inputerror");
         e.currentTarget.classList.add("inputValid");
-        emailSpan.textContent = "";
+        errors.email = "";
+        emailSpan.textContent = errors.email;
     }
 })
 
 
 // telephone number validation
 let telRegex = /^[0-9]$/;
-telnum.addEventListener('blur', function(e) {
-    if (!etat) {
-        e.currentTarget.classList.add("inputerror");
-        telnumSpan.textContent = "only number are accepted";
-    } 
-})
+
 
 telnum.addEventListener('input', function(e) {
     e.currentTarget.value.split('').forEach(elem => {
         if (elem >= '0' && elem <= '9'){
             e.currentTarget.classList.remove("inputerror");
             e.currentTarget.classList.add("inputValid");
-            telnumSpan.textContent = "";
+            errors.telnum = "";
+            telnumSpan.textContent = errors.telnum;
         }
         else {
             e.currentTarget.classList.add("inputerror");
             e.currentTarget.classList.remove("inputValid");
-            telnumSpan.textContent = "only number are accepted";          
+            errors.telnum = "only number are accepted";
+            telnumSpan.textContent = errors.telnum;
         }
 
     });
@@ -91,7 +105,19 @@ telnum.addEventListener('input', function(e) {
 
 
 
+// form.addEventListener("submit", function(e) {
+//     if (errors.nom == "") {
+//         nomSpan.textContent = "the name is required"; 
+//     }
+//     if (errors.telnum == "") {
+//         telnumSpan = "the telephone is required"
+//     }
 
+//     if (errors.email == "") {
+//         emailSpan = "the email is required";
+//     }
+
+// })
 
 
 

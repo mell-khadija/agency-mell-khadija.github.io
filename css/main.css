@@ -610,7 +610,7 @@ body {
   padding: 15px 10px;
   margin: 15px 0px;
   border-radius: 8px;
-  background-color: #c5c5c5;
+  background-color: #fafafa;
   color: #1f1616;
 }
 .error {
@@ -629,7 +629,6 @@ body {
 
 .inputerror {
   border: 1px solid #f85353 !important;
-  color: #ffffff !important;
 }
 
 .inputValid {
