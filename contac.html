@@ -8,9 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" sizes="100*80" href="./Images/logo-youcode.png">
-    <title>Contact</title>
+    <title>web design with sass</title>
 </head>
-
 <body>
     <img src="./Images/menu.svg" alt="" width="50px" height="40px" class="menu-btn">
     <nav class="container">
@@ -28,23 +27,30 @@
         </div>
     </nav>
 
-    <main class="sec-contact">
-        <div class="contact-container">
-            <div class="contact-title">
-                <h1>Contactez Notre Agence Digitale</h1>
-            </div>
-            <div class="contact-contenu">
-                <img src="Images/446.png" alt="#" width="600px" height="400px">
+    <header>
+        <div class="container contact--description">
+            <h2>Contactez Notre Agence Digitale</h2><br>
+            <p>Veuillez entrer les détails de votre demande. Un membre de notre équipe répondra dans les meilleurs délais.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact">
+            <div class="container conatct--form">
+                <img src="Images/446.png" alt="#" width="100%" height="100%">
                 <form class="contact--insc">
-                    <input type="text" name="Nom" placeholder="Nom" id="Nom" required>
-                    <input type="email" name="Email" placeholder="Email" id="Email" required> 
-                    <input type="telephone" name="numéro de téléphone" placeholder="Numéro de téléphone" id="numéro-de-téléphone" required>
-                    <input type="text" name="objet" placeholder="objet" id="objet" required>
-                    <textarea type="text" name="demande" placeholder="Détaillez votre demande" id="demande" required></textarea>
-                    <button class="button-contact" style="width: 30%;">Envoyer</button>
+                    <input type="text" name="nom" placeholder="Nom" class="Nom" >
+                    <span class="errorName error"></span>
+                    <input type="email" name="email" placeholder="Email" class="email">
+                    <span class="errorEmail error"></span> 
+                    <input type="tel" name="telnum" placeholder="Numéro de téléphone" class="telnum">
+                    <span class="errorTel error"></span>
+                    <input type="text" name="objet" placeholder="objet" class="objet">
+                    <textarea type="text" name="demande" placeholder="Détaillez votre demande" class="demande" rows="6"></textarea>
+                    <button type="submit" id="submit">envoyer</button>
                 </form>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
