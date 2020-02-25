@@ -18,9 +18,9 @@
             <a href="#" class="logo"><img src="./Images/logo-youcode.png" alt="logo-youcode" width="60%"></a>
         </div>
         <ul id="links">
-            <li class="link-item"><a href="#">visite guidée</a></li>
+            <li class="link-item"><a href="index.html">visite guidée</a></li>
             <li class="link-item"><a href="#">études de cas</a></li>
-            <li class="link-item"><a href="contac.html">contactez nous</a></li>
+            <li class="link-item" ><a href="contac.html">contactez nous</a></li>
             <li class="link-item"><a href="#">obtenez un devis</a></li>
         </ul>
         <div class="nav--button-container">
@@ -34,17 +34,31 @@
                 <h1>Contactez Notre Agence Digitale</h1>
             </div>
             <div class="contact-contenu">
-                <img src="Images/446.png" alt="#" width="600px" height="400px">
+                <img src="Images/simplon.png" alt="#" width="600px" height="400px">
                 <form class="contact--insc">
-                    <input type="text" name="Nom" placeholder="Nom" id="Nom" required>
-                    <input type="email" name="Email" placeholder="Email" id="Email" required> 
-                    <input type="telephone" name="numéro de téléphone" placeholder="Numéro de téléphone" id="numéro-de-téléphone" required>
-                    <input type="text" name="objet" placeholder="objet" id="objet" required>
-                    <textarea type="text" name="demande" placeholder="Détaillez votre demande" id="demande" required></textarea>
-                    <button class="button-contact" style="width: 30%;">Envoyer</button>
+                    <input type="text" name="Nom" placeholder="Nom" id="Nom" >
+                    <span id="erreur1" style="color:red;"></span>
+                    <input type="email" name="Email" placeholder="Email" id="Email" > 
+                    <span id="erreur2" style="color: red;"></span>
+
+                    <input type="telephone" name="numéro de téléphone" placeholder="Numéro de téléphone" id="tel" >
+                    <span id="erreur3" style="color:red;"></span>
+
+
+                    <input type="text" name="objet" placeholder="objet" id="objet" >
+                    <span id="erreur4" style="color: red;"></span>
+
+
+                    <textarea type="text" name="message" placeholder="Détaillez votre demande" id="message"></textarea>
+                    <span id="error_message"></span>
+
+                    <button class="button-contact" id = "button" style="width: 30%;">Envoyer</button>
                 </form>
             </div>
         </div>
+        <div class="iframe_map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.8725307664683!2d-8.521479065611066!3d32.24650992732193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaefdf7a5abd215%3A0xf838facafb432e7b!2sYoucode!5e0!3m2!1sfr!2sma!4v1582576228187!5m2!1sfr!2sma" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div>
     </main>
 
     <footer>

@@ -24,9 +24,10 @@
     padding-top: 1rem;
     
     
+    
 }
 input{
-    margin-top: 1rem;
+    margin-top: 2rem;
     // padding: 1rem 1rem;
     padding:1rem 16rem 1rem 1rem;
     border: 2px solid #eee;
@@ -45,10 +46,12 @@ textarea{
     background: #eee;
 }
 .button-contact {
-    background-color: white; 
+   
+    // background: linear-gradient(90deg, rgba(86, 83, 163, 0.514) 0%, rgba(61, 166, 198, 0.548) 100%);
     border: 1px solid black;
+    border-radius:8px;
     color: black;
-    padding: 15px 20px;
+    // padding: 15px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -56,9 +59,16 @@ textarea{
     margin: 10px 0px 0px;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-left: 5px;
+    
+  
 
   }
   .button-contact:hover {
     background-color:rgb(30, 113, 190);
     color: white;
   }
+.iframe_map{
+    margin-top: px;
+}
+

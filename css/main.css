@@ -558,8 +558,9 @@ textarea {
 }
 
 .button-contact {
-  background-color: white;
+  background: linear-gradient(90deg, #5653a3 0%, #3da6c6 100%);
   border: 1px solid black;
+  border-radius: 10;
   color: black;
   padding: 15px 20px;
   text-align: center;
