@@ -36,14 +36,39 @@
             <div class="contact-contenu">
                 <img src="Images/446.png" alt="#" width="600px" height="400px">
                 <form class="contact--insc">
-                    <input type="text" name="Nom" placeholder="Nom" id="Nom" required>
-                    <input type="email" name="Email" placeholder="Email" id="Email" required> 
-                    <input type="telephone" name="numéro de téléphone" placeholder="Numéro de téléphone" id="numéro-de-téléphone" required>
-                    <input type="text" name="objet" placeholder="objet" id="objet" required>
-                    <textarea type="text" name="demande" placeholder="Détaillez votre demande" id="demande" required></textarea>
-                    <button class="button-contact" style="width: 30%;">Envoyer</button>
+                    <input type="text" name="Nom" placeholder="Nom" id="Nom">
+                    <p style="color: red;" id="erreur1"></p>
+                    <input type="email" name="Email" placeholder="Email" id="Email">
+                    <p style="color: red;" id="erreur2"></p>
+                    <input type="telephone" name="numéro de téléphone" placeholder="Numéro de téléphone" id="tel">
+                    <p style="color: red;" id="erreur3"></p>
+                    <input type="text" name="objet" placeholder="objet" id="objet">
+                    <p style="color: red;" id="erreur4"></p>
+                    <textarea type="text" name="demande" placeholder="Détaillez votre demande" id="demande"></textarea>
+                    <button id="button" class="button-contact" style="width: 30%;">Envoyer</button>
                 </form>
+
             </div>
+        </div>
+        <div class="box">
+            <div class="box-mail">
+                <img src="Images/mail.png" alt="#" width="12%">
+                <h4>Mail</h4>
+                <a href="#">contactez-nous@YouCode.org</a>
+            </div>
+            <div class="box-adresse">
+                <img src="Images/map.png" alt="#" width="12%">
+                <h4>Adresse</h4>
+                <p>Boulvard moulay youssef,
+                     Youssoufia,Maroc</p>
+            </div>
+            <div class="box-phone">
+                <img src="Images/phone.png" alt="#" width="12%">
+                <h4>téléphone</h4>
+                <a href="#">0600-123-456</a>
+            </div>
+
+
         </div>
     </main>
 
