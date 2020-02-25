@@ -66,24 +66,29 @@ email.addEventListener('input', function(e){
 // telephone number validation
 let telRegex = /^[0-9]$/;
 telnum.addEventListener('blur', function(e) {
-    if (!(telRegex.test(e.currentTarget.value))) {
+    if (!etat) {
         e.currentTarget.classList.add("inputerror");
         telnumSpan.textContent = "only number are accepted";
-    }
+    } 
 })
 
-telnum.addEventListener('input', function(e){
-    if (telRegex.test(e.currentTarget.value)) {
-        e.currentTarget.classList.remove("inputerror");
-        e.currentTarget.classList.add("inputValid");
-        telnumSpan.textContent = "";
-        
-    }
-    else {
-        e.currentTarget.classList.add("inputerror");
-        telnumSpan.textContent = "only number are accepted";        
-    }
+telnum.addEventListener('input', function(e) {
+    e.currentTarget.value.split('').forEach(elem => {
+        if (elem >= '0' && elem <= '9'){
+            e.currentTarget.classList.remove("inputerror");
+            e.currentTarget.classList.add("inputValid");
+            telnumSpan.textContent = "";
+        }
+        else {
+            e.currentTarget.classList.add("inputerror");
+            e.currentTarget.classList.remove("inputValid");
+            telnumSpan.textContent = "only number are accepted";          
+        }
+
+    });
 })
+
+
 
 
 
