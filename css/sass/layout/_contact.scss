@@ -2,63 +2,76 @@
 @import "../base";
 
 
-.sec-contact{
-    
-    margin-top: 4rem;
-    height: 130vh;
-}
-.contact-title{
-    text-align: center;
-    padding-top: 3rem;
-}
-.contact-contenu{
-    display: flex;
-    justify-content:space-evenly ;
-    padding-top: 5rem;
 
+
+#contact {
+    padding: 54px;
 }
-.contact--insc{
+.contact--description {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
-    padding-top: 1rem;
-    
-    
-}
-input{
-    margin-top: 1rem;
-    // padding: 1rem 1rem;
-    padding:1rem 16rem 1rem 1rem;
-    border: 2px solid #eee;
-    border-radius: 8px ;
-    background: #eee;
-}
-#Nom placeholder{
-    text-align: start;
-}
-textarea{
-    margin-top: 1rem;
-    padding: 1rem 8rem 6rem 1rem;
-    border: 2px solid white;
-    border-radius: 8px ;
-    margin-bottom: 1rem;
-    background: #eee;
-}
-.button-contact {
-    background-color: white; 
-    border: 1px solid black;
-    color: black;
-    padding: 15px 20px;
+    height: 200px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 10px 0px 0px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
 
-  }
-  .button-contact:hover {
-    background-color:rgb(30, 113, 190);
-    color: white;
-  }
+.conatct--form {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 992px){
+        flex-direction: column;
+    }
+    img {
+        width: 50%;
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+
+    }
+    form {
+        width: 50%;
+        align-self: center;
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+
+        input, textarea {
+            display: block;
+            width: 100%;
+            padding: 15px 10px;
+            margin: 15px 0px;
+            border-radius: 8px;
+            background-color: rgb(197, 197, 197);
+            color: rgb(31, 22, 22);
+        }
+        #submit {
+            @extend %btn;
+        }
+    }
+}
+
+
+.error {
+    color: rgb(233, 20, 20);
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.valide {
+    color: green;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 10px;
+
+}
+
+.inputerror {
+    border: 1px solid rgb(248, 83, 83) !important;
+    color: #ffffff !important;
+}
+
+.inputValid {
+    border: 2px solid rgb(5, 167, 5);
+}

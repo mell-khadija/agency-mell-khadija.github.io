@@ -35,3 +35,15 @@ body {
     margin: 0px auto;
     
 }
+%btn {
+    padding: 15px 32px;
+        font-size: 20px;
+        text-transform: capitalize;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        color: #fff;
+        background: rgb(86,83,163);
+        margin: 20px 0;
+        background: linear-gradient(90deg, rgba(86,83,163,1) 0%, rgba(61,166,198,1) 100%);
+}
