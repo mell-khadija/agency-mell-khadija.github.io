@@ -28,9 +28,10 @@ $color3:#666666;
     padding-top: 1rem;
     
     
+    
 }
 input{
-    margin-top: 1rem;
+    margin-top: 2rem;
     // padding: 1rem 1rem;
     padding:1rem 20rem 1rem 1rem;
     border: 2px solid #eee;
@@ -61,6 +62,9 @@ textarea{
     margin: 10px 0px 0px;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-left: 5px;
+    
+  
 
   }
   .button-contact:hover {
@@ -86,6 +90,9 @@ textarea{
         height: 248px;
 
     }
+}
+.iframe_map{
+    height: 350px;
 }
 
 .box{
