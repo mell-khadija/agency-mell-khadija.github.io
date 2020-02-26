@@ -26,7 +26,7 @@ html {
         
         footer{
             position: relative;
-            top: -10px;
+    
             margin-bottom: 0px;
             background: url("../Images/footer-image.png");
             background-repeat: no-repeat;
@@ -35,10 +35,10 @@ html {
             // height:100vh;
             padding-left: 15px;
             padding-right: 12px;
-            margin: 0px 0px;
+            margin: 0px auto;
             .foot{
                 text-align: center;
-                padding-top: 30px;
+               
                 .button{
                     display: flex;
                     align-items: center;
@@ -58,7 +58,7 @@ html {
             .div-footer{
                 display: flex;
                 justify-content: space-between;
-                margin:10px ;
+          
                 div{
                     p{
                         a{
