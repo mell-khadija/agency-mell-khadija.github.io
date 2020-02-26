@@ -27,52 +27,42 @@
             <button class="header--nav">Votre devis</button>
         </div>
     </nav>
-
-    <main class="sec-contact">
-        <div class="contact-container">
-            <div class="contact-title">
-                <h1>Contactez Notre Agence Digitale</h1>
+    <section>
+        <article>
+            <div id="socialMedia" style="position: fixed;">
+                <a href="#"><img src="./Images/instagram.svg" class="sm" /></br></a>
+                <a href="#"> <img src="./Images/linkedin (2).svg" class="sm" /></br></a>
+                <a href="#"><img src="./Images/twitter (1).svg" class="sm" /></br></a>
+                <a href="#"><img src="./Images/facebook (1).svg" class="sm" /></a>
             </div>
-            <div class="contact-contenu">
-                <img src="Images/446.png" alt="#" width="600px" height="400px">
-                <form class="contact--insc">
-                    <input type="text" name="Nom" placeholder="Nom" id="Nom">
-                    <p style="color: red;" id="erreur1"></p>
-                    <input type="email" name="Email" placeholder="Email" id="Email">
-                    <p style="color: red;" id="erreur2"></p>
-                    <input type="telephone" name="numéro de téléphone" placeholder="Numéro de téléphone" id="tel">
-                    <p style="color: red;" id="erreur3"></p>
-                    <input type="text" name="objet" placeholder="objet" id="objet">
-                    <p style="color: red;" id="erreur4"></p>
-                    <textarea type="text" name="demande" placeholder="Détaillez votre demande" id="demande"></textarea>
-                    <button id="button" class="button-contact" style="width: 30%;">Envoyer</button>
-                </form>
-
+        </article>
+        <img src="./Images/Social-Media.gif" alt="social-media" style="width:40%;height:40%" id="img1" />
+        <div id="form">
+            <div class="info">
+                <h1>Contactez-nous</h1>
             </div>
-        </div>
-        <div class="box">
-            <div class="box-mail">
-                <img src="Images/mail.png" alt="#" width="12%">
-                <h4>Mail</h4>
-                <a href="#">contactez-nous@YouCode.org</a>
+            <div class="info">
+                <input type="text" placeholder="     Nom" id="nom">&nbsp;
+                <span id="span1"></span>
             </div>
-            <div class="box-adresse">
-                <img src="Images/map.png" alt="#" width="12%">
-                <h4>Adresse</h4>
-                <p>Boulvard moulay youssef,
-                     Youssoufia,Maroc</p>
+            <div class="info">
+                <input type="email" placeholder="   Email" id="email">&nbsp;
+                <span id="span2"></span>
             </div>
-            <div class="box-phone">
-                <img src="Images/phone.png" alt="#" width="12%">
-                <h4>téléphone</h4>
-                <a href="#">0600-123-456</a>
+            <div class="info">
+                <input type="text" placeholder="   objet" id="objet">&nbsp;
+                <span id="span3"></span>
+            </div>
+            <div class="info ">
+                <textarea placeholder="   Message" id="Message"></textarea>&nbsp;</br>
+                <button id="envoyer" onclick="valider()">Envoyer</button>
             </div>
         </div>
-        <div class="iframe_map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.8725307664683!2d-8.521479065611066!3d32.24650992732193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaefdf7a5abd215%3A0xf838facafb432e7b!2sYoucode!5e0!3m2!1sfr!2sma!4v1582576228187!5m2!1sfr!2sma" width="100%" height="600px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-    </main>
-
+    </section>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3374.3957439465726!2d-8.523342085461975!3d32.2474328811352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaefd6bddf35825%3A0x41d161dd49eaf2d3!2sYouCode%20(leet)!5e0!3m2!1sfr!2sma!4v1582619633184!5m2!1sfr!2sma"
+        width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="">
+    </iframe>
     <footer>
         <div class="foot">
             <H1>Lessez-nous vous épater</H1>
