@@ -30,15 +30,15 @@ document.getElementById("button").addEventListener("click" , function(e) {
     let telRegex = /^[0-9]+$/;
 
     if(!Nom.value){
-        erreur = "veuillez renseigner un nom";
+        erreur = "Ce champ est obligatoire";
         document.getElementById("erreur1").textContent = erreur;
     }
     else if (Nom.value.length < 6 || Nom.value.length > 32) {
-        erreur = "faut être between 6 et 32 character";
+        erreur = "faut être entre 6 et 32 caractére";
         document.getElementById("erreur1").textContent = erreur;       
     }
     if(!Email.value){
-        erreur = "veuillez renseigner un email";
+        erreur = "Ce champ est obligatoire";
         document.getElementById("erreur2").textContent = erreur;
     }
     else if (!emailRegex.test(Email.value)) {
@@ -47,15 +47,15 @@ document.getElementById("button").addEventListener("click" , function(e) {
     }
 
     if(!tel.value){
-        erreur = "veuillez renseigner un tel";
+        erreur = "Ce champ est obligatoire";
         document.getElementById("erreur3").textContent = erreur;
     }
     else if (!telRegex.test(tel.value)) {
-        erreur = "the telephone number must include only number";
+        erreur = "justement des chiffre";
         document.getElementById("erreur3").textContent = erreur;       
     }
     if(!objet.value){
-        erreur = "veuillez renseigner un objet";
+        erreur = "Ce champ est obligatoire";
         document.getElementById("erreur4").textContent = erreur;
     }
     if (erreur != "")
