@@ -514,18 +514,17 @@ body {
 }
 
 .back-heade {
-  background: url("../Images/cont.jpg") center no-repeat fixed;
+  background: url("../Images/contact.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 550px;
+  height: 600px;
+}
+.back-heade h2 {
+  text-align: center;
+  font-size: 52px;
+  padding-top: 10rem;
 }
 
-@media (max-width: 375px) {
-  .back-heade {
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-  }
-}
 .sec-contact {
   margin-top: 0rem;
   height: 200vh;
@@ -710,7 +709,7 @@ textarea {
 }
 
 .iframe_map {
-  height: 450px;
+  height: 350px;
   margin-top: 2.5rem;
 }
 
@@ -741,4 +740,4 @@ textarea {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.map */
