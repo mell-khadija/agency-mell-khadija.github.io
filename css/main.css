@@ -421,7 +421,6 @@ html body {
 }
 html body footer {
   position: relative;
-  top: -10px;
   margin-bottom: 0px;
   background: url("../Images/footer-image.png");
   background-repeat: no-repeat;
@@ -429,11 +428,10 @@ html body footer {
   color: white;
   padding-left: 15px;
   padding-right: 12px;
-  margin: 0px 0px;
+  margin: 0px auto;
 }
 html body footer .foot {
   text-align: center;
-  padding-top: 30px;
 }
 html body footer .foot .button {
   display: flex;
@@ -461,7 +459,6 @@ html body footer .foot .button #consult {
 html body footer .div-footer {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
 }
 html body footer .div-footer div p a {
   color: white;
