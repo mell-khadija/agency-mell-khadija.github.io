@@ -38,6 +38,15 @@ html {
             margin: 0px auto;
             .foot{
                 text-align: center;
+                padding-top: 2rem;
+                line-height: 2rem;
+                font-family: 'Poppins', sans-serif;
+                h4{
+                    line-height: 4rem;
+                }
+                p{
+                    line-height: 1.5rem;
+                }
                
                 .button{
                     display: flex;

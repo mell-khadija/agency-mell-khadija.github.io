@@ -432,6 +432,15 @@ html body footer {
 }
 html body footer .foot {
   text-align: center;
+  padding-top: 2rem;
+  line-height: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+html body footer .foot h4 {
+  line-height: 4rem;
+}
+html body footer .foot p {
+  line-height: 1.5rem;
 }
 html body footer .foot .button {
   display: flex;
