@@ -752,5 +752,8 @@ textarea {
     margin-bottom: 3rem;
   }
 }
+.error {
+  font-size: 10px;
+}
 
 /*# sourceMappingURL=main.css.map */
