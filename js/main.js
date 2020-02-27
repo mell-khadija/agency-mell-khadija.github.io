@@ -46,9 +46,11 @@ document.getElementById("form").addEventListener("submit" , function(e) {
 
     if(!Nom.value){
         erreurName = "Ce champ est obligatoire";
+        Nom.classList.add("Erreur");
     }
     else if (Nom.value.length < 6 || Nom.value.length > 32) {
         erreurName = "faut être entre 6 et 32 caractére";
+         Nom.classList.add("Erreur");
     }
     else {
         erreurName = "";
@@ -58,10 +60,12 @@ document.getElementById("form").addEventListener("submit" , function(e) {
     // for email;
     if(!Email.value){
         erreurEmail = "Ce champ est obligatoire";
+         Email.classList.add("Erreur");
     }
     
     else if (!emailRegex.test(Email.value)) {
         erreurEmail = "exmple@email.com";
+        Email.classList.add("Erreur");
     }
     else {
         erreurEmail = "";
@@ -78,16 +82,20 @@ document.getElementById("form").addEventListener("submit" , function(e) {
 
     if(!tel.value){
         erreurTelnum = "Ce champ est obligatoire";
+        tel.classList.add("Erreur");
     }
     else if (!telRegex.test(tel.value)) {
         erreurTelnum = "justement des chiffre";
+        tel.classList.add("Erreur");
     }
     else if(tel.value.length !== 10) {
         erreurTelnum = "should contains 10 digit";
+        tel.classList.add("Erreur");
     }
     
     else if (!((firstTwo == "06") || (firstTwo == "05") || (firstTwo = "07") )) {
         erreurTelnum = "phone should begin with 06 or 07 or 05";
+        tel.classList.add("Erreur");
     }
     else {
         erreurTelnum = "";
@@ -96,6 +104,7 @@ document.getElementById("form").addEventListener("submit" , function(e) {
     // for object validation
     if(!objet.value){
         erreurObj = "Ce champ est obligatoire";
+        objet.classList.add("Erreur");
     }
     else {
         erreurObj = "";
