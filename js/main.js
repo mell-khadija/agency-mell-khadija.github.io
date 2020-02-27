@@ -18,73 +18,98 @@ menu.addEventListener("click", () =>{
 
 
 
-document.getElementById("button").addEventListener("click" , function(e) { 
+document.getElementById("form").addEventListener("submit" , function(e) { 
    
-    var erreur = "";
+    // to store errors
+    var erreurName = "";
+    var erreurEmail = "";
+    var erreurTelnum = "";
+    var erreurObj = "";
+
+    // element t check validaty;
     var Nom = document.getElementById("Nom");
     var Email = document.getElementById("Email");
     var tel = document.getElementById("tel");
     var objet = document.getElementById("objet");
 
+    // where to display error
+    var nameErr = document.getElementById("erreur1");
+    var emailErr = document.getElementById("erreur2");
+    var telErr = document.getElementById("erreur3");
+    var objErr = document.getElementById("erreur4");
+
+
+    // email form
     let emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+    // for digit
     let telRegex = /^[0-9]+$/;
 
     if(!Nom.value){
-        erreur = "Ce champ est obligatoire";
-        document.getElementById("erreur1").textContent = erreur;
+        erreurName = "Ce champ est obligatoire";
     }
     else if (Nom.value.length < 6 || Nom.value.length > 32) {
-        erreur = "faut être entre 6 et 32 caractére";
-        document.getElementById("erreur1").textContent = erreur;       
+        erreurName = "faut être entre 6 et 32 caractére";
     }
+    else {
+        erreurName = "";
+    }
+
+
+    // for email;
     if(!Email.value){
-        erreur = "Ce champ est obligatoire";
-        document.getElementById("erreur2").textContent = erreur;
+        erreurEmail = "Ce champ est obligatoire";
     }
     
     else if (!emailRegex.test(Email.value)) {
-        erreur = "exmple@email.com";
-        document.getElementById("erreur2").textContent = erreur;
+        erreurEmail = "exmple@email.com";
+    }
+    else {
+        erreurEmail = "";
     }
 
+
+    // for telephone number validation
     // first two number of the telephone number;
     let firstTwo;
 
     if (tel.value.length > 2) {
         firstTwo = tel.value.slice(0, 2);
     }
+
     if(!tel.value){
-        erreur = "Ce champ est obligatoire";
-        document.getElementById("erreur3").textContent = erreur;
+        erreurTelnum = "Ce champ est obligatoire";
     }
     else if (!telRegex.test(tel.value)) {
-        erreur = "justement des chiffre";
-        document.getElementById("erreur3").textContent = erreur;       
+        erreurTelnum = "justement des chiffre";
     }
     else if(tel.value.length !== 10) {
-        erreur = "should contains 10 digit";
-        document.getElementById("erreur3").textContent = erreur; 
+        erreurTelnum = "should contains 10 digit";
     }
     
     else if (!((firstTwo == "06") || (firstTwo == "05") || (firstTwo = "07") )) {
-            erreur = "phone should begin with 06 or 07 or 05";
-            document.getElementById("erreur3").textContent = erreur;
+        erreurTelnum = "phone should begin with 06 or 07 or 05";
     }
     else {
-        erreur = "";
-        document.getElementById("erreur3").textContent = erreur;     
+        erreurTelnum = "";
     }
+
+    // for object validation
     if(!objet.value){
-        erreur = "Ce champ est obligatoire";
-        document.getElementById("erreur4").textContent = erreur;
+        erreurObj = "Ce champ est obligatoire";
+    }
+    else {
+        erreurObj = "";
     }
     
-    
-    if (erreur != "")
+    if (erreurName != "" || erreurEmail != "" || erreurTelnum != "" || erreurObj != "")
     {
+        nameErr.textContent = erreurName;
+        emailErr.textContent = erreurEmail;
+        telErr.textContent = erreurTelnum;
+        objErr.textContent = erreurObj;
         e.preventDefault();
     }
     else {
-        alert('Formulaire envoyé !');
+        alert("formulaire est envoyé");
     }
 })
