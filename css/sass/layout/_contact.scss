@@ -70,7 +70,7 @@ input{
     margin-top: 1rem;
     // padding: 1rem 1rem;
     padding:1rem 1rem 1rem 1rem;
- 
+    outline:0;
     border: 2px solid #eee;
     border-radius: 4px ;
     background: rgb(253, 253, 253);
@@ -99,7 +99,7 @@ textarea{
     margin: 10px 0px 0px;
     transition-duration: 0.4s;
     cursor: pointer;
-
+    outline:0;
   }
   .button-contact:hover {
     background-color:rgb(40, 177, 219);
