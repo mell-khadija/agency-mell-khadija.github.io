@@ -519,6 +519,16 @@ body {
   margin: 0px auto;
 }
 
+.Erreur {
+  border: 1px solid red;
+  box-shadow: 0 0 5px red;
+}
+
+.valide {
+  border: 2px solid green;
+  box-shadow: 0 0 10px green;
+}
+
 .back-heade {
   background: url("../Images/contact-us.jpg") center no-repeat fixed;
   background-size: cover;
@@ -563,7 +573,7 @@ input {
   padding: 1rem 1rem 1rem 1rem;
   border: 2px solid #eee;
   border-radius: 4px;
-  background: #eee;
+  background: #fdfdfd;
 }
 
 #Nom placeholder {
@@ -573,10 +583,10 @@ input {
 textarea {
   margin-top: 1rem;
   padding: 1rem 1rem 6rem 1rem;
-  border: 2px solid white;
+  border: 2px solid #eee;
   border-radius: 8px;
   margin-bottom: 1rem;
-  background: #eee;
+  background: #fdfdfd;
 }
 
 .button-contact {

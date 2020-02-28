@@ -54,6 +54,7 @@ document.getElementById("form").addEventListener("submit" , function(e) {
     }
     else {
         erreurName = "";
+        Nom.classList.remove("Erreur");
     }
 
 
@@ -69,6 +70,7 @@ document.getElementById("form").addEventListener("submit" , function(e) {
     }
     else {
         erreurEmail = "";
+        Email.classList.remove("Erreur");
     }
 
 
@@ -99,6 +101,7 @@ document.getElementById("form").addEventListener("submit" , function(e) {
     }
     else {
         erreurTelnum = "";
+        tel.classList.remove("Erreur");
     }
 
     // for object validation
@@ -108,6 +111,7 @@ document.getElementById("form").addEventListener("submit" , function(e) {
     }
     else {
         erreurObj = "";
+        objet.classList.remove("Erreur");
     }
     
     if (erreurName != "" || erreurEmail != "" || erreurTelnum != "" || erreurObj != "")

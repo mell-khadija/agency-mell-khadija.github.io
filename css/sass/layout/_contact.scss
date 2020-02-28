@@ -6,8 +6,8 @@ $color1:#0e314c;
 $color2:#eee;
 $color3:#666666;
 .Erreur{
-border:2px solid red;
-box-shadow:0 0 10px red;
+border: 1px solid red;
+box-shadow:0 0 5px red;
 }
 .valide{
   border :2px solid green;
@@ -73,7 +73,7 @@ input{
  
     border: 2px solid #eee;
     border-radius: 4px ;
-    background: #eee;
+    background: rgb(253, 253, 253);
 }
 #Nom placeholder{
     text-align: start;
@@ -81,10 +81,10 @@ input{
 textarea{
     margin-top: 1rem;
     padding: 1rem 1rem 6rem 1rem;
-    border: 2px solid white;
+    border: 2px solid #eee;
     border-radius: 8px ;
     margin-bottom: 1rem;
-    background: #eee;
+    background: rgb(253, 253, 253);
 }
 .button-contact {
     background-color: white; 
